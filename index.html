@@ -26,12 +26,12 @@
             <span>+7 (812) 555-05-55</span>
             г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
           </p>
-          <nav class="top-menu-navigation">
+          <div class="top-menu-navigation">
             <ul class="user-navigation">
-              <li>Войти</li>
-              <li>Регистрация</li>
+              <li><a href="#">Войти</a></li>
+              <li><a href="#">Регистрация</a></li>
             </ul>
-          </nav>
+          </div>
         </section>
         <nav class="main-navigation">
           <ul class="site-navigation">
@@ -288,12 +288,29 @@
 	 </footer>
     <section class="modal modal-feedback">
       <h2 class="visually-hidden">Форма связи</h2>
-      <!-- Место для формы-->
-      <span class=modal-close"">x</span>
+      <form class="wrire-us" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label for="user-name">Ваше имя:</label>
+          <input type="text" name="name" id="user-name" placeholder="Имя Фамилия">
+        </p>
+        <p>
+          <label for="user-e-mail">Ваш e-mail:</label>
+          <input type="text" name="e-mail" id="user-e-mail" placeholder="email@example.com">
+        </p>
+        <p>
+          <label for="comment-field">Текст письма:</label>
+          <textarea name="comment" id="comment-field" cols="50" rows="6" placeholder="В свободной форме"></textarea>
+        </p>
+        <button type="submit">Отправить</button>
+      </form>  
+      <button class="modal-close" type="button">Закрыть</button>
     </section>
     <section class="modal modal-map">
-      <h2 class="visually-hidden">Как добраться</h2>
-      <span class=modal-close"">x</span>
+      <h2 class="visually-hidden">Карта</h2>
+      <p>
+        <img src="img/big-map.jpg" width="940" height="446" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+      </p>
+      <button class="modal-close" type="button">Закрыть</button>
     </section>    
   </body>
 </html>
