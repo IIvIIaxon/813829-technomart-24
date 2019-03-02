@@ -77,41 +77,78 @@
               <h3>Фильтр</h3>
             </div>
             <form class="filter" action="https://echo.htmlacademy.ru" method="get">
+              <fieldset class="filter-item">
+                <legend>Цена:</legend>
+                <div class="range-filter">
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar" style="margin-left: 0%; width: 80%"></div>
+                    </div>
+                    <div class="toggle toggle-min"></div>
+                    <div class="toggle toggle-max"></div>
+                  </div>
+                  <div class="price-controls">
+                    <label class="min-price"><input name="min-price" type="text" value="0"></label>
+                    <label class="max-price"><input name="max-price" type="text" value="30000"></label>
+                  </div>
+                </div>
+              </fieldset>
               <fieldset>
                 <legend>Производители:</legend>
                 <ul>
                   <li class="filter-option">
-                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="bosch" id="filter-bosch" checked>
-                    <label for="filter-bosch">Bosch</label>
+                    <label class="checkbox-wrapper">
+                      <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="bosch" id="filter-bosch" checked>
+                      <span class="checkbox-indicators"></span>
+                      Bosch
+                    </label>
                   </li>
                   <li class="filter-option">
-                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="interskol" id="filter-interskol" checked>
-                    <label for="filter-interskol">Интерскол</label>
+                    <label class="checkbox-wrapper">
+                      <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="interskol" id="filter-interskol">
+                      <span class="checkbox-indicators"></span>
+                      Интерскол
+                    </label>
                   </li>
                   <li class="filter-option">
-                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="makita" id="filter-makita" checked>
-                    <label for="filter-makita">Makita</label>
+                    <label class="checkbox-wrapper">
+                      <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="makita" id="filter-makita" checked>
+                      <span class="checkbox-indicators"></span>
+                      Makita
+                    </label>
                   </li>
                   <li class="filter-option">
-                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="dewalt" id="filter-dewalt" checked>
-                    <label for="filter-dewalt">Dewalt</label>
+                    <label class="checkbox-wrapper">
+                      <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="dewalt" id="filter-dewalt">
+                      <span class="checkbox-indicators"></span>
+                      Dewalt
+                    </label>
                   </li>
                   <li class="filter-option">
-                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hitachi" id="filter-hitachi" checked>
-                    <label for="filter-hitachi">Hitachi</label>
+                    <label class="checkbox-wrapper">
+                      <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hitachi" id="filter-hitachi">
+                      <span class="checkbox-indicators"></span>
+                      Hitachi
+                    </label>
                   </li>
                 </ul>
               </fieldset>
-              <fieldset>
+              <fieldset class="power">
                 <legend>Питание:</legend>
                 <ul>
                   <li class="filter-option">
-                    <input class="visually-hidden filter-input filter-input-radio" type="radio" name="supply-type" id="filter-battery" value="battery">
-                    <label for="filter-battery">Аккумуляторные</label>
+                    <label class="radiobuttons-wrapper">
+                      <input class="visually-hidden filter-input filter-input-radio" type="radio" name="supply-type" id="filter-battery" value="battery" checked>
+                      <span class="radio-indicators"><span class="circle"></span></span>
+                      Аккумуляторные
+                    </label>
                   </li>
                   <li class="filter-option">
-                    <input class="visually-hidden filter-input filter-input-radio" type="radio" name="supply-type" id="filter-mains-supply" value="mains-supply">
-                    <label for="filter-mains-supply">Сетевые</label>
+                    <label class="radiobuttons-wrapper">
+                      <input class="visually-hidden filter-input filter-input-radio" type="radio" name="supply-type" id="filter-mains-supply" value="mains-supply">
+                      <span class="radio-indicators"></span>
+                      Сетевые
+                    </label>
                   </li>
                 </ul>
               </fieldset>
@@ -318,7 +355,7 @@
         <div class="container">
           <h2>Пара слов о перфораторах</h2>
           <p class="description-text">
-            Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
+            Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
             Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
           </p>
         </div>
