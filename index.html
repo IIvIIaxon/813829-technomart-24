@@ -5,7 +5,7 @@
     <title>HTML Academy: Техномарт</title>
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/min.css">
   </head>
   <body>
     <header class="main-header">
@@ -25,8 +25,8 @@
           <div class="container">
             <h1>
               Интернет-магазин
-              строительных материалов<br>
-              и инструментов для ремонта
+              строительных материалов
+              и&nbsp;инструментов для ремонта
             </h1>
             <div class="header-contacts">
              <span>+7 (812) 555-05-55</span>
@@ -62,68 +62,76 @@
     	<section class="promo-block">
         <h2 class="visually-hidden">Промо-блок</h2>
         <div class="container">
-          <ul class="products-services">
-            <li class="products-services-item">
-              <div>
-                <div class="flag flag-new">новинка</div>
-                <p>
-                  <b>Материалы</b>
-                  <a href="#"><span>на любой вкус</span></a>
-                </p>
-              </div>
-            </li>
-            <li class="products-services-item">
-              <div>
-                <p>
-                  <b>Инструменты</b>
-                  <a href="#"><span>на все случаи</span></a> 
-                </p>
-              </div>
-            </li>
-            <li class="products-services-item">
-              <div>
-                <p>
-                  <b>Техника</b>
-                  <a href="#"><span>для стройки</span></a>
-                </p>
-              </div>
-            </li>
-            <li class="products-services-item">
-              <div class="slider">
-                <div class="item">
-                    <img src="img/slider1.jpg" alt="Первый слайд">
-                    <div class="slideText"><b>Перфораторы</b>Настоящие мужские игрушки</div>
+          <div class="products-services">
+            <div class="row first-row">
+              <div class="products-services-item products-services-item-1">
+                <div>
+                  <div class="flag flag-new">новинка</div>
+                  <p>
+                    <b>Материалы</b>
+                    <a href="#"><span>на любой вкус</span></a>
+                  </p>
                 </div>
-                <div class="item">
-                    <img src="img/slider2.jpg" alt="Второй слайд">
-                    <div class="slideText"><b>Дрели</b>Соседям на радость!</div>
+              </div>
+              <div class="products-services-item products-services-item-2">
+                <div>
+                  <p>
+                    <b>Инструмент</b>
+                    <a href="#"><span>на все случаи</span></a> 
+                  </p>
                 </div>
-                <a class="prev" onclick="minusSlide()"></a>
-                <a class="next" onclick="plusSlide()"></a>
               </div>
-              <div class="slider-dots">
-                <span class="slider-dots_item" onclick="currentSlide(1)"></span> 
-                <span class="slider-dots_item" onclick="currentSlide(2)"></span>  
+              <div class="products-services-item products-services-item-3">
+                <div>
+                  <p>
+                    <b>Техника</b>
+                    <a href="#"><span>для стройки</span></a>
+                  </p>
+                </div>
               </div>
-              <a href="catalog.html" class="open-catalog">Открыть каталог</a>
-            </li>
-            <li class="products-services-item">
-              <div>
-                <p>
-                  <b>Скидки 50%</b>
-                  <a href="#"><span>На 350 товаров</span></a>
-                </p>
+            </div>
+            <div class="row">
+              <div class="col-1">
+                <div class="products-services-item products-services-item-4">
+                  <div class="slider">
+                    <div class="item">
+                        <img src="img/slider1.jpg" width="620" height="266" alt="Первый слайд">
+                        <div class="slideText"><b>Перфораторы</b>Настоящие мужские игрушки</div>
+                    </div>
+                    <div class="item">
+                        <img src="img/slider2.jpg" width="620" height="266" alt="Второй слайд">
+                        <div class="slideText"><b>Дрели</b>Соседям на радость!</div>
+                    </div>
+                    <a class="prev" onclick="minusSlide()"></a>
+                    <a class="next" onclick="plusSlide()"></a>
+                  </div>
+                  <div class="slider-dots">
+                    <span class="slider-dots_item" onclick="currentSlide(1)"></span> 
+                    <span class="slider-dots_item" onclick="currentSlide(2)"></span>  
+                  </div>
+                  <a href="catalog.html" class="open-catalog">Открыть каталог</a>
+                </div>
               </div>
-            </li>
-            <li class="products-services-item">
-              <div>
-                <p>
-                  <b>Доставка</b>
-                  <a href="#"><span>Бесплатно</span></a>
-                </p>
+              <div class="col-2">
+                <div class="products-services-item products-services-item-5">
+                  <div>
+                    <p>
+                      <b>Скидки 50%</b>
+                      <a href="#"><span>На 350 товаров</span></a>
+                    </p>
+                  </div>
+                </div>
+                <div class="products-services-item products-services-item-6">
+                  <div>
+                    <p>
+                      <b>Доставка</b>
+                      <a href="#"><span>Бесплатно</span></a>
+                    </p>
+                  </div>
+                </div>
               </div>
-            </li>
-          </ul>
+            </div>
+          </div>
         </div>
       </section>
       <section class="popular-products">
@@ -135,6 +143,7 @@
           <ul class="popular-products-list">
             <li class="product-item">
                 <div class="product-item-wrapper">
+                  <div class="flag flag-new visually-hidden">новинка</div>
                   <div>
                     <img src="img/perforator_3.jpg" width="218" height="170" alt="Изображение перфоратора">
                   </div>
@@ -154,6 +163,7 @@
               </li>
               <li class="product-item">
                 <div class="product-item-wrapper">
+                  <div class="flag flag-new visually-hidden">новинка</div>
                   <div>
                     <img src="img/perforator_1.jpg" width="218" height="170" alt="Изображение перфоратора">
                   </div>
@@ -173,6 +183,7 @@
               </li>
               <li class="product-item">
                 <div class="product-item-wrapper">
+                  <div class="flag flag-new visually-hidden">новинка</div>
                   <div>
                     <img src="img/perforator_2.jpg" width="218" height="170" alt="Изображение перфоратора">
                   </div>
@@ -291,9 +302,9 @@
                   Доставка
                 </h2>
                 <p>
-                  Мы с удовольствием доставим ваш товар прямо 
+                  Мы с удовольствием доставим ваш товар прямо<br> 
                   к вашему подъезду совершенно бесплатно!
-                  Ведь мы неплохо заработаем,<br> 
+                  Ведь&nbsp;мы&nbsp;неплохо заработаем,<br> 
                   поднимая его на ваш этаж!
                 </p>
               </section>  
@@ -312,7 +323,7 @@
                   Кредит
                 </h2>
                 <p>
-                  Залезть в долговую яму стало проще! 
+                  Залезть в долговую яму стало проще!<br> 
                   Кредитные консультанты придут вам на помощь.
                 </p>
                 <a href="#">Отправить заявку</a>
@@ -328,7 +339,7 @@
             Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
           </p>
           <p>
-            Мы можем доставить ваш товар в самые отдаленные точки России!<br>
+            Мы можем доставить ваш товар в самые отдаленные точки России!
             Техномарт работает со многими транспортными компаниями: 
           </p>
           <ul class="delivery-list">
@@ -341,7 +352,7 @@
         <section class="contacts">
           <h2>Контакты</h2>
           <p>
-            Вы можете забрать товар сами,<br> 
+            Вы можете забрать товар сами,
             заехав в наш офис:
           </p>
           <img class="show-map" src="img/mini-map.jpg" width="300" height="158" alt="карта">
@@ -363,7 +374,7 @@
         </div>
         <div class="footer-center">
           <p class="footer-contacts">
-            г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+            г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
             +7 (812) 555-05-55
           </p>
           <ul class="products-menu-list">
@@ -377,7 +388,7 @@
       <div class="footer-down">
         <div class="container">
           <p class="footer-copyright">
-            © 2010–2019 Компания «Техномарт»<br>
+            © 2010–2019 Компания «Техномарт»
             Все права защищены
           </p>
           <div class="footer-social">
@@ -424,11 +435,11 @@
           </div>
           <div class="feedback-wrapper">
             <p class="footer-feedback">
-              <b>Обратная связь</b><br>
+              <b>Обратная связь</b>
               <a href="https://mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </p>
             <p class="footer-developers">
-              <b>Разработано - </b><br>
+              <b>Разработано - </b>
               <a href="https://htmlacademy.ru">htmlacademy.ru</a>
             </p>
           </div>
@@ -467,6 +478,6 @@
       </p>
       <button class="modal-close modal-close-map" type="button">Закрыть</button>
     </section>
-    <script src="js/script.js"></script>    
+    <script src="js/min-script.js"></script>    
   </body>
 </html>
