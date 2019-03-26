@@ -2,6 +2,8 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>HTML Academy: Техномарт</title>
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
@@ -46,13 +48,13 @@
           <div class="container">
             <div class="background-wrapper">
               <ul class="site-navigation">
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="#">Компания</a></li>
-                <li><a href="catalog.html">Каталог</a></li>
-                <li><a href="#">Новости</a></li>
-                <li><a href="#">Спецпредложения</a></li>
-                <li><a href="#">Доставка</a></li>
-                <li><a href="#">Контакты</a></li>
+                <li class="site-navigation-item"><a href="index.html">Главная</a></li>
+                <li class="site-navigation-item"><a href="#">Компания</a></li>
+                <li class="site-navigation-item"><a href="catalog.html">Каталог</a></li>
+                <li class="site-navigation-item"><a href="#">Новости</a></li>
+                <li class="site-navigation-item"><a href="#">Спецпредложения</a></li>
+                <li class="site-navigation-item"><a href="#">Доставка</a></li>
+                <li class="site-navigation-item"><a href="#">Контакты</a></li>
               </ul>
             </div>
           </div>
@@ -64,9 +66,8 @@
         <div class="container">
           <div class="products-services">
             <div class="row first-row">
-              <div class="products-services-item products-services-item-1">
+              <div class="products-services-item products-services-item-1 flag">
                 <div>
-                  <div class="flag flag-new">новинка</div>
                   <p>
                     <b>Материалы</b>
                     <a href="#"><span>на любой вкус</span></a>
@@ -102,8 +103,8 @@
                         <img src="img/slider2.jpg" width="620" height="266" alt="Второй слайд">
                         <div class="slideText"><b>Дрели</b>Соседям на радость!</div>
                     </div>
-                    <a class="prev" onclick="minusSlide()"></a>
-                    <a class="next" onclick="plusSlide()"></a>
+                    <a class="prev" onclick="minusSlide()">Предыдущий слайд</a>
+                    <a class="next" onclick="plusSlide()">Следующий слайд</a>
                   </div>
                   <div class="slider-dots">
                     <span class="slider-dots_item" onclick="currentSlide(1)"></span> 
@@ -143,7 +144,6 @@
           <ul class="popular-products-list">
             <li class="product-item">
                 <div class="product-item-wrapper">
-                  <div class="flag flag-new visually-hidden">новинка</div>
                   <div>
                     <img src="img/perforator_3.jpg" width="218" height="170" alt="Изображение перфоратора">
                   </div>
@@ -163,7 +163,6 @@
               </li>
               <li class="product-item">
                 <div class="product-item-wrapper">
-                  <div class="flag flag-new visually-hidden">новинка</div>
                   <div>
                     <img src="img/perforator_1.jpg" width="218" height="170" alt="Изображение перфоратора">
                   </div>
@@ -183,7 +182,6 @@
               </li>
               <li class="product-item">
                 <div class="product-item-wrapper">
-                  <div class="flag flag-new visually-hidden">новинка</div>
                   <div>
                     <img src="img/perforator_2.jpg" width="218" height="170" alt="Изображение перфоратора">
                   </div>
@@ -202,8 +200,7 @@
                 </div>
               </li>
               <li class="product-item">
-                <div class="product-item-wrapper">
-                  <div class="flag flag-new">новинка</div>
+                <div class="product-item-wrapper flag">
                   <div>
                     <img src="img/perforator_1.jpg" width="218" height="170" alt="Изображение перфоратора">
                   </div>
@@ -276,14 +273,14 @@
       </section>
       <section class="services">
         <div class="container">
-          <div class="first-row">
-            <h2>Сервисы</h2>
+          <div class="services-first-row">
+            <h2 >Сервисы</h2>
             <p>
               Хороший интернет-магазин отличается от плохого не только ценами!
               Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
             </p>
           </div>
-          <div class="second-row">
+          <div class="services-second-row">
             <div class="tabs">
               
                 <input id="tab1" type="radio" name="tabs" checked>
@@ -355,8 +352,10 @@
             Вы можете забрать товар сами,
             заехав в наш офис:
           </p>
-          <img class="show-map" src="img/mini-map.jpg" width="300" height="158" alt="карта">
-          <a class="show-form" href="#">Заблудились? Напишите нам!</a>
+            <a class="show-map" href="map.html">
+              <img src="img/mini-map.jpg" width="300" height="158" alt="карта">
+            </a>
+          <a class="show-form" href="form.html">Заблудились? Напишите нам!</a>
         </section>
       </div>
     </main>
@@ -446,7 +445,7 @@
         </div>
       </div>
 	 </footer>
-    <section class="modal modal-feedback visually-hidden">
+    <section class="modal modal-feedback">
       <h2 class="visually-hidden">Форма связи</h2>
       <form class="wrire-us" action="https://echo.htmlacademy.ru" method="post">
         <div class="form fields-wrapper">
@@ -471,7 +470,7 @@
       </form>  
       <button class="modal-close" type="button">Закрыть</button>
     </section>
-    <section class="modal modal-map visually-hidden">
+    <section class="modal modal-map">
       <h2 class="visually-hidden">Карта</h2>
       <p>
         <img src="img/big-map.jpg" width="940" height="446" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">

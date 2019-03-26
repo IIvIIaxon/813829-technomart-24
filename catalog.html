@@ -2,6 +2,8 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>HTML Academy: Техномарт</title>
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
@@ -9,7 +11,7 @@
   </head>
   <body class="inner">
     <header class="main-header">
-    	 <div class="top-menu">
+    	 <div class="top-menu inner-top-menu">
           <div class="container">
             <a href="index.html" class="logo"><img src="img/logo.png" width="110" height="18" alt="Логотип Техномарта"></a>
             <form class="header-search" action="https://echo.htmlacademy.ru" method="get">
@@ -35,10 +37,11 @@
               </p>
             </div>
             <div class="inner-menu-navigation">
-              <a class="user" href="#">Равшан Джамшутович</a>
+              <a class="user" href="profile.html">Равшан Джамшутович</a>
+              <a class="user-logout" href="index.html">Выход</a>
               <ul class="inner-navigation">
-                <li><a href="#">Мои заказы</a></li>
-                <li><a href="#">Личный кабинет</a></li> 
+                <li class="inner-navigation-item"><a href="#">Мои заказы</a></li>
+                <li class="inner-navigation-item"><a href="#">Личный кабинет</a></li> 
               </ul>
             </div>
           </div>  
@@ -47,13 +50,13 @@
           <div class="container">
             <div class="background-wrapper">
               <ul class="site-navigation">
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="#">Компания</a></li>
-                <li><a href="catalog.html">Каталог</a></li>
-                <li><a href="#">Новости</a></li>
-                <li><a href="#">Спецпредложения</a></li>
-                <li><a href="#">Доставка</a></li>
-                <li><a href="#">Контакты</a></li>
+                <li class="site-navigation-item"><a href="index.html">Главная</a></li>
+                <li class="site-navigation-item"><a href="#">Компания</a></li>
+                <li class="site-navigation-item"><a href="catalog.html">Каталог</a></li>
+                <li class="site-navigation-item"><a href="#">Новости</a></li>
+                <li class="site-navigation-item"><a href="#">Спецпредложения</a></li>
+                <li class="site-navigation-item"><a href="#">Доставка</a></li>
+                <li class="site-navigation-item"><a href="#">Контакты</a></li>
               </ul>
             </div>
           </div>
@@ -163,13 +166,12 @@
               <div><a href="#">По цене</a></div>
               <div><a href="#">По типу</a></div>
               <div><a href="#">По функционалу</a></div>
-              <div><a class="arrow-up" href="#"></a></div>
-              <div><a class="arrow-down" href="#"></a></div>
+              <div><a class="arrow-up" href="#">Сортировка по возрастанию</a></div>
+              <div><a class="arrow-down" href="#">Сортировка по убыванию</a></div>
             </div>
             <ul class="products-list">
               <li class="product-item">
                 <div class="product-item-wrapper">
-                  <div class="flag flag-new visually-hidden">новинка</div>
                   <div>
                     <img src="img/perforator_1.jpg" width="218" height="170" alt="Изображение перфоратора">
                   </div>
@@ -189,7 +191,6 @@
               </li>
               <li class="product-item">
                 <div class="product-item-wrapper">
-                  <div class="flag flag-new visually-hidden">новинка</div>
                   <div>
                     <img src="img/perforator_2.jpg" width="218" height="170" alt="Изображение перфоратора">
                   </div>
@@ -208,8 +209,7 @@
                 </div>
               </li>
               <li class="product-item">
-                <div class="product-item-wrapper">
-                  <div class="flag flag-new">новинка</div>
+                <div class="product-item-wrapper flag">
                   <div>
                     <img src="img/perforator_1.jpg" width="218" height="170" alt="Изображение перфоратора">
                   </div>
@@ -229,7 +229,6 @@
               </li>
               <li class="product-item">
                 <div class="product-item-wrapper">
-                  <div class="flag flag-new visually-hidden">новинка</div>
                   <div>
                     <img src="img/perforator_1.jpg" width="218" height="170" alt="Изображение перфоратора">
                   </div>
@@ -248,8 +247,7 @@
                 </div>
               </li>
               <li class="product-item">
-                <div class="product-item-wrapper">
-                  <div class="flag flag-new">новинка</div>
+                <div class="product-item-wrapper flag">
                   <div>
                     <img src="img/perforator_2.jpg" width="218" height="170" alt="Изображение перфоратора">
                   </div>
@@ -269,7 +267,6 @@
               </li>
               <li class="product-item">
                 <div class="product-item-wrapper">
-                  <div class="flag flag-new visually-hidden">новинка</div>
                   <div>
                     <img src="img/perforator_1.jpg" width="218" height="170" alt="Изображение перфоратора">
                   </div>
@@ -288,8 +285,7 @@
                 </div>
               </li>
               <li class="product-item">
-                <div class="product-item-wrapper">
-                  <div class="flag flag-new">новинка</div>
+                <div class="product-item-wrapper flag">
                   <div>
                     <img src="img/perforator_1.jpg" width="218" height="170" alt="Изображение перфоратора">
                   </div>
@@ -309,7 +305,6 @@
               </li>
               <li class="product-item">
                 <div class="product-item-wrapper">
-                  <div class="flag flag-new visually-hidden">новинка</div>
                   <div>
                     <img src="img/perforator_2.jpg" width="218" height="170" alt="Изображение перфоратора">
                   </div>
@@ -329,7 +324,6 @@
               </li>
               <li class="product-item">
                 <div class="product-item-wrapper">
-                  <div class="flag flag-new visually-hidden">новинка</div>
                   <div>
                     <img src="img/perforator_1.jpg" width="218" height="170" alt="Изображение перфоратора">
                   </div>
@@ -453,7 +447,7 @@
         </div>
       </div>
    </footer>
-    <section class="modal modal-basket visually-hidden">
+    <section class="modal modal-basket">
       <h2 class="visually-hidden">Корзина</h2>
       <p>Товар добавлен в корзину!</p>
         <div class="button-wrapper">

@@ -40,19 +40,20 @@ function showSlides(n) {
     }
 }
 
+
 var link = document.querySelector(".show-form");
 var popap = document.querySelector(".modal-feedback");
 if (link && popap) {
 link.addEventListener("click", function(evt) {
     evt.preventDefault();
-    popap.classList.remove("visually-hidden");
+    popap.classList.add("modal-show");
 });
 }
 var close = document.querySelector(".modal-close");
 if (close && popap) {
 close.addEventListener("click", function(evt) {
     evt.preventDefault();
-    popap.classList.add("visually-hidden");
+    popap.classList.remove("modal-show");
 });
 }
 
@@ -61,7 +62,7 @@ var popap2 = document.querySelector(".modal-map");
 if (link2 && popap2) {
 link2.addEventListener("click", function(evt) {
     evt.preventDefault();
-    popap2.classList.remove("visually-hidden");
+    popap2.classList.add("modal-show");
 });
 }
 
@@ -69,7 +70,7 @@ var close2 = document.querySelector(".modal-close-map");
 if (close2) {
 close2.addEventListener("click", function(evt) {
     evt.preventDefault();
-    popap2.classList.add("visually-hidden");
+    popap2.classList.remove("modal-show");
 });
 }
 
@@ -77,7 +78,7 @@ var close3 = document.querySelector(".modal-close-basket");
 if (close3) {
   close3.addEventListener("click", function(evt) {
     evt.preventDefault();
-    popap3.classList.add("visually-hidden");
+    popap3.classList.remove("modal-show");
 });
 }
 
@@ -87,8 +88,7 @@ if (link4) {
   for (var i = 0; i < link4.length; i++) {
     link4[i].addEventListener("click", function(evt) {
     evt.preventDefault();
-    popap3.classList.remove("visually-hidden");
-    console.log("ghhhd");
+    popap3.classList.add("modal-show");
     });
   } 
 }
